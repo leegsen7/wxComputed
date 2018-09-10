@@ -9,9 +9,7 @@ class Dep {
         this.subs.push(sub)
     }
     depend() {
-        // Compile初始化也会触发get方法，但此时Dep.target为null
-        // 触发Watcher里面的getVMVal时，Dep.target有值，是Watcher的当前实例
-        // Watcher line 42
+        // Watcher getValue方法执行时Dep.target有值
         if (Dep.target) {
             // Watcher addDep执行
             Dep.target.addDep(this)
