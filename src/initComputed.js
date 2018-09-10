@@ -8,17 +8,16 @@ export default function initComputed(vm) {
             console.warn(`${key} prop not a function in computed!!!`)
             break
         }
-        let value = null
         Object.defineProperty(vm.data, key, {
-            set: function _computedSetter(newValue) {
-                value = newValue
-            },
+            set: function _computedSetter() {},
             get: (function () {
                 const watcher = new Watcher(vm, fn, () => {
                     vm.setData({
                         [key]: watcher.value,
                     })
                 })
+                // 为了在调试面板appData中显示此属性
+                vm.data[key] = watcher.value
                 return function _computedGetter() {
                     watcher.depend()
                     return watcher.value
