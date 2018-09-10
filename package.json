@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rollup -c rollup.dev.config.js -w -m",
+    "build": "rollup -c rollup.build.config.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/leegsen7/wxComputed#readme",
   "devDependencies": {
-    "rollup": "^0.65.2"
+    "rollup": "^0.65.2",
+    "rollup-plugin-uglify": "^5.0.2"
   }
 }
