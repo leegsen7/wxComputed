@@ -1,8 +1,8 @@
 {
-  "name": "wxcomputed",
+  "name": "wxComputed",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "微信小程序computed自动计算功能",
+  "main": "wxComputed.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "rollup -c rollup.dev.config.js -w -m",
