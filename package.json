@@ -1,8 +1,8 @@
 {
-  "name": "wxComputed",
-  "version": "1.0.0",
+  "name": "wx-computed",
+  "version": "0.0.1",
   "description": "微信小程序computed自动计算功能",
-  "main": "wxComputed.min.js",
+  "main": "dist/wxComputed.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "rollup -c rollup.dev.config.js -w -m",
@@ -12,7 +12,15 @@
     "type": "git",
     "url": "git+https://github.com/leegsen7/wxComputed.git"
   },
-  "author": "",
+  "author": {
+    "name": "Darnell Lee",
+    "email": "leegsen7@gmail.com"
+  },
+  "keywords": [
+    "wei-xin",
+    "computed",
+    "WeChat Mini-Program"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/leegsen7/wxComputed/issues"
