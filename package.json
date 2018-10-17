@@ -1,6 +1,6 @@
 {
   "name": "wx-computed",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "微信小程序computed属性自动计算功能",
   "main": "dist/wxComputed.min.js",
   "miniprogram": "dist",
