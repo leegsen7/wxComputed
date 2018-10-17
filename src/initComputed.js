@@ -5,8 +5,8 @@ export default function initComputed(vm) {
     for (const key in vm.computed) {
         const fn = vm.computed[key]
         if (typeof fn !== 'function') {
-            console.warn(`${key} prop not a function in computed!!!`)
-            break
+            console.error(`${key} prop not a function in computed!!!`)
+            continue
         }
         Object.defineProperty(vm.data, key, {
             set: function _computedSetter() {},
