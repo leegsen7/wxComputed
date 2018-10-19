@@ -1,9 +1,9 @@
 {
   "name": "wx-computed",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "微信小程序computed属性自动计算功能",
   "main": "dist/wxComputed.min.js",
-  "miniprogram": "dist",
+  "miniprogram": "dist/wxComputed.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "rollup -c rollup.dev.config.js -w -m",
